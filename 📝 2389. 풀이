@@ -1,0 +1,23 @@
+# 2389. Longest Subsequence With Limited Sum
+
+## finn
+
+### 풀이
+
+스택을 이용해서 해결했습니다.
+
+```js
+var removeStars = function(s) {
+  const result = []
+
+  for (const string of s){
+    if (string !== '*'){
+      result.push(string)
+    } else {
+      result.pop()
+    }
+  }
+  
+  return result.join('')    
+};
+```
